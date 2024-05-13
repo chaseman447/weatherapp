@@ -1,14 +1,12 @@
 package weather.data.remote.response
 
 data class Hour(
-    val air_quality: AirQuality,
     val chance_of_rain: Int,
     val chance_of_snow: Int,
     val cloud: Int,
-    val condition: ConditionXX,
+    val condition: Condition,
     val dewpoint_c: Double,
     val dewpoint_f: Double,
-    val diff_rad: Double,
     val feelslike_c: Double,
     val feelslike_f: Double,
     val gust_kph: Double,
@@ -21,7 +19,6 @@ data class Hour(
     val precip_mm: Double,
     val pressure_in: Double,
     val pressure_mb: Double,
-    val short_rad: Double,
     val snow_cm: Double,
     val temp_c: Double,
     val temp_f: Double,
